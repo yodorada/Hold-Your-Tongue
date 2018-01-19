@@ -1,0 +1,64 @@
+
+#blahHunt {
+  margin: auto;
+  width: 700px;
+  height: auto;
+  position: relative;
+}
+#blahHunt #blahHuntVars {
+  width: 100%;
+  height: 30px;
+}
+#blahHunt #blahHuntVars div {
+  display: inline-block;
+  width: 33%;
+  color: #fff;
+  font-family: 'Oswald';
+  font-style: normal;
+}
+#blahHunt #blahHuntVars div#numlaser {
+  float: left;
+}
+#blahHunt #blahHuntVars div#numlevel {
+  text-align: center;
+  float: left;
+}
+#blahHunt #blahHuntVars div#playerscore {
+  float: right;
+  text-align: right;
+}
+#blahHunt #blahHuntVars div#playerscore::after {
+  clear: both;
+  content: '';
+  height: 0px;
+  display: block;
+}
+#blahHunt #blahHuntCanvases {
+  width: 700px;
+  height: 700px;
+  background: url(../images/starfield.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+  cursor: none;
+}
+#blahHunt #blahHuntCanvases canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+#blahHunt #blahHuntCanvases canvas#bgcanvas {
+  z-index: 1;
+}
+#blahHunt #blahHuntCanvases canvas#enemycanvas {
+  z-index: 2;
+}
+#blahHunt #blahHuntCanvases canvas#emittercanvas {
+  z-index: 4;
+}
+#blahHunt #blahHuntCanvases canvas#actioncanvas {
+  z-index: 5;
+}
+#blahHunt #blahHuntCanvases canvas#shipcanvas {
+  z-index: 6;
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Hold your tongue - Blah Blah Hunt</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/basic.css">
+        <link rel="stylesheet" href="assets/css/game.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <div id="wrapper">
+            <div class="blahHunt" id="blahHunt">
+                <div class="blahHuntVars" id="blahHuntVars">
+                    <div id="numlaser">Laser: <span></span></div>
+                    <div id="numlevel">Level: <span></span></div>
+                    <div id="playerscore">Score: <span></span></div>
+                </div>
+                <div id="blahHuntCanvases">
+                    <canvas id="bgcanvas"></canvas>
+                    <canvas id="enemycanvas"></canvas>
+                    <canvas id="emittercanvas"></canvas>
+                    <canvas id="actioncanvas"></canvas>
+                    <canvas id="shipcanvas"></canvas>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="assets/js/game.js"></script>
+        <script>
+            $(document).ready(function() {
+                window.yodorada.game();
+            });
+        </script>
+    </body>
+</html>
